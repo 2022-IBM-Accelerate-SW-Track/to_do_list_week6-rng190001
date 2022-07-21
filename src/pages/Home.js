@@ -52,9 +52,10 @@ class Home extends Component {
       data: {jsonObject},
       headers: {
         "Content-Type": "application/json"
-      }
+      },
+      withCredentials: true
     }).then(res => {
-        console.log(res.data.message);
+      console.log(res.data.message);
     });
 
     // Create a array that contains the current array and the new todo item
